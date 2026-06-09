@@ -1,9 +1,22 @@
+@font-face {
+    font-family: 'big-noodle-too-oblique';
+    src: url(assets/fonts/big-noodle-too-oblique.woff) format('woff'),
+        url(assets/fonts/archivo.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'archivo', sans-serif;
 }
 
+a{
+    font-family: 'archivo', sans-serif;
+}
 
 /*HEADER*/
 .header_pagina{
@@ -43,7 +56,8 @@
     align-items: center;
 
     a{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 }
 
@@ -99,17 +113,94 @@ a.logo_overwatch{
         &:hover{
             filter: brightness(110%);
         }
-    }
+        
+    }  
 }
 
 .hero{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 85dvh;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
     video{
+        position: absolute; 
         width: 100%;
-        
+        height: 100%;
+        object-fit: cover; 
+        z-index: -1;
+        filter: brightness(80%);
+    }
+
+    img{
+        width: 500px;
+        z-index: 2;
+    
+    }
+}
+
+.informacion_hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: white;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        h2{
+            font-family: 'big-noodle-too-oblique', sans-serif;
+            font-size: 3.8rem;
+            font-weight: lighter;
+        }
+
+        p{
+            font-family: 'archivo', sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+        };
+    }
+
+    
+        button{
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background-color: #e65d0f;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s ease-in;
+
+            &:hover{
+                transform: scale(1.05);
+                filter: brightness(105%);
+            }
+        }
+}
+
+.logos_consolas{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+    svg{
+        height: 100%;
+        color: #fff;
     }
 }
 
