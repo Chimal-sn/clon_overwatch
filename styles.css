@@ -149,7 +149,8 @@ a.logo_overwatch{
     }
 
     img{
-        width: 500px;
+        max-width: 500px;
+        width: 100%;
         z-index: 2;
     
     }
@@ -383,9 +384,6 @@ footer{
 @media (width <= 768px){
 
     .hero{
-        img{
-            width: 600px;
-        }
         gap: 20px;
         padding: 20px;
     }
@@ -449,13 +447,6 @@ footer{
 }
 
 @media (width <= 425px){
-
-    .hero{
-        img{
-            width: 350px;
-        }
-    }
-
     .informacion_hero{
         div{
             h2{
@@ -518,14 +509,6 @@ footer{
         .mi_informacion{
             flex-direction: column;
             align-items: flex-start;
-        }
-    }
-}
-
-@media (width <= 320px){
-    .hero{
-        img{
-            width: 280px;
         }
     }
 }
