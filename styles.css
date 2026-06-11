@@ -357,6 +357,10 @@ footer{
         color: #ffffff80;
         margin-top: 20px;
     }
+
+    .blanco{
+        color: #fff;
+    }
 }
 
 
@@ -442,5 +446,86 @@ footer{
             
         }
     }
+}
 
+@media (width <= 425px){
+
+    .hero{
+        img{
+            width: 350px;
+        }
+    }
+
+    .informacion_hero{
+        div{
+            h2{
+                text-align: center;
+                font-size: 2rem;            
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+        button{
+            padding: 15px;
+            font-size: 0.8rem;
+        
+        }
+    }
+
+    .informacion_juego{
+        gap: 70px;
+        padding: 50px 15px;
+        .contenedor_texto_juego{
+            text-align: center;
+            h3{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 0.9rem;
+                line-height: 1.5rem;
+            
+            }
+        }
+    }
+
+    .informacion_actualizacion{
+        padding: 50px 15px;
+        .contenedor_texto_informacion_actualizacion{
+            gap: 10px;
+            h3{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 0.9rem;
+                line-height: 1.5rem; 
+            }
+
+            button{
+                font-size: 0.8rem;
+            
+            }
+        }
+    }
+
+    footer{
+        padding: 30px;
+
+        .mi_informacion{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (width <= 320px){
+    .hero{
+        img{
+            width: 280px;
+        }
+    }
 }
